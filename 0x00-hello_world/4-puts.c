@@ -2,7 +2,9 @@
 /**
  * main - entry point
  *
- * return: o (success)
+ * description: prints "Programming is like building a multilingual puzzle
+ *
+ * Return: 0 and exit the program
  */
 int main(void)
 {
