@@ -11,6 +11,6 @@ int main(void)
 	for (n = '0'; n <= '9'; n++)
 		putchar(n);
 
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
