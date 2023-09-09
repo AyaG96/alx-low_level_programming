@@ -9,14 +9,18 @@
  */
 int main(void)
 {
-	char l;
+	char l = 'a';
 
-	for (l = 'a'; l <= 'z'; l++)
+	while (l <= 'z')
+
 	{
-		if (l != 'e' && l != 'q')
+
+		if (l != 'e' && l != 'q');
 			putchar(l);
+			l++;
 	}
 
 	putchar('\n');
+
 	return (0);
 }
