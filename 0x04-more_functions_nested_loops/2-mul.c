@@ -2,13 +2,13 @@
 
 /**
  * mul - multiplies two integers
- * @a, b: integers to multiply
+ * @a: first integer
+ * @b: second integer
  *
- * Return: 0 (success)
+ * Return: return results
  */
 int mul(int a, int b)
 {
-	_putchar(a * b);
+	return (a * b);
 
-	return(0);
 }
