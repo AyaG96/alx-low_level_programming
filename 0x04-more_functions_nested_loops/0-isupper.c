@@ -5,7 +5,7 @@
  *
  * @c: char for check
  *
- * Return: 1 if c is a uppercase and 0 if otherwise
+ * Return: 1 if c is uppercase and 0 if otherwise
  */
 
 int _isupper(int c)
