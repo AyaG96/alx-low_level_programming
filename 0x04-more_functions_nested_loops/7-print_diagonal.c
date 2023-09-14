@@ -3,7 +3,7 @@
 /**
  * print_diagonal - check code.
  *
- *@n: variable
+ * @n: variable
  *
  * Return: Always
  */
@@ -22,7 +22,7 @@ void print_diagonal(int n)
 			{
 				_putchar(' ');
 			}
-			_putchar('/');
+			_putchar(92);
 			_putchar('\n');
 		}
 	}
