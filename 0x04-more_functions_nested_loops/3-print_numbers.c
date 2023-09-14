@@ -1,11 +1,10 @@
 #include "main.h"
-
 /**
- * print_numbers - check code
+ * print_numbers - check code.
  *
- *
- * Return: always
+ * Return: Always 
  */
+
 void print_numbers(void)
 {
 	int l;
