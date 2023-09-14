@@ -1,0 +1,25 @@
+#include "main.h"
+
+/**
+ * print_square - check code.
+ *
+ *@size: variable
+ *
+ * Return: Always
+ */
+
+void print_square(int size)
+{
+	int j, i;
+
+	for (j = 1; j <= ize; j++)
+	{
+		for (i = 1; i <= size; i++)
+		{
+			_putchar(35);
+		}
+	_putchar('\n');
+	}
+	if (size <= 0)
+	_putchar('\n');
+}
