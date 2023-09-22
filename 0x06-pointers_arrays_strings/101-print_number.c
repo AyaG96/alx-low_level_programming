@@ -9,18 +9,24 @@
 
 void print_number(int n)
 {
-	unsigned int num = n;
 
-	if (num < 0)
-	{
-		_putchar('-');
-		num = -num;
-	}
+        unsigned int integer = n;
 
-	if (num / 10 != 0)
-	{
-		print_number(num / 10);
-	}
-	_putchar ((num % 10) + '0');
+        if  (n < 0)
+        {
+                integer = -n;
+                _putchar('-');
+        }
 
+        else
+        {
+                integer = n;
+        }
+
+        if (integer / 10 != 0)
+        {
+                print_number(integer / 10);
+        }
+
+        _putchar((integer % 10) + '0');
 }
