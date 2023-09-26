@@ -11,6 +11,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int i, j, count;
+
 	count = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
@@ -23,8 +24,8 @@ unsigned int _strspn(char *s, char *accept)
 			}
 			if (s[i] == ' ')
 			{
-			return (count);
-			}	
+				return (count);
+			}
 		}
 	}
 	return (count);
