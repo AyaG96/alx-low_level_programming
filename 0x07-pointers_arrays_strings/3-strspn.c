@@ -21,8 +21,11 @@ unsigned int _strspn(char *s, char *accept)
 			{
 				count++;
 			}
-			
+			if (s[i] == ' ')
+			{
+			return (count);
+			}	
 		}
 	}
-	return (count);
+
 }
