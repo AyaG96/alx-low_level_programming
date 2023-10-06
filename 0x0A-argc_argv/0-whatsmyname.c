@@ -3,7 +3,7 @@
  * main - a program that prints its name
  *
  * @argc: argument count
- * @argv: Array of argument strings
+ * @argv: arggument vector
  *
  * Return: 0
  */
