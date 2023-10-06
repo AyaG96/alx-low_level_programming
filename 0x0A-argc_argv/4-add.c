@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 #include <stdlib.h>
 /**
  * main - adds positive numbers
@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 
 	if (argc < 2)
 	{
-		printf("0\n")
+		printf("0\n");
 	}
 	else
 	{
@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 				}
 			}
 		}
-		sum += atoi(arg[i]);
+		sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
 	return (0);
