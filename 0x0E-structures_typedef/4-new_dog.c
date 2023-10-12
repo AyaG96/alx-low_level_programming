@@ -1,23 +1,6 @@
 #include "dog.h"
 #include <string.h>
 /**
- * _strcpy - copies string
- * @dest: destination
- * @src: source
- *
- * Return: pointer to destination
- */
-char *_strcpy(char *dest, char *src)
-{
-	int i;
-
-	for (i = 0; src[i]; i++)
-		dest[i] = src[i];
-	dest[i] = '\0';
-
-	return (dest);
-}
-/**
  * new_dog - creates a new dog
  *
  * @name: name of the dog
@@ -29,32 +12,33 @@ char *_strcpy(char *dest, char *src)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new;
+	dog_t *new_dog = malloc(sizeof(dog_t));
 
-	new = malloc(sizeof(dog_t));
-
-			if (new == NULL)
-			return (NULL);
-
-	new->name = strdup(name);
-	if (new->name == NULL)
+	if (new_dog == NULL)
 	{
-		free(new);
 		return (NULL);
 	}
-	new->name = _strcpy(new->name, name);
 
-	new->owner = strdup(owner);
-	if (new->owner == NULL)
+	new_dog->name = malloc(strlen(name) + 1);
+	if (new_dog->name == NULL)
 	{
-		free(new->name);
-		free(new);
+		free(new_dog);
 		return (NULL);
 	}
-	new->owner = _strcpy(new->owner, owner);
-	new->age = age;
+	strcpy(new_dog->name, name);
 
-	return (new);
+	new_dog->age = age;
+
+	new_dog->owner = malloc(strlen(owner) + 1);
+	if (new_dog->owner == NULL)
+	{
+		free(new_dog->name);
+		free(new_dog);
+		return (NULL);
+	}
+	strcpy(new_dog->owner, owner);
+
+	return (new_dog);
 }
 
 
